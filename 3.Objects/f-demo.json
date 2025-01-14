@@ -1,0 +1,7 @@
+{
+  "name": "Pesho",
+  "age": 20,
+  "isMale": true,
+  "grades": [2, 4, 5, 6, 6, 4, 6],
+  "location": { "lat": 32.232, "lng": -15.333 }
+}
