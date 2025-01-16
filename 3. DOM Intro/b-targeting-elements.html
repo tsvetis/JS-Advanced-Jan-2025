@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Targeting HTML Elements</title>
+
+    <style>
+      #wrapper {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .colorful-lines {
+        border: 1px solid red;
+      }
+
+      .item {
+        width: 100px;
+        height: 50px;
+        align-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper" class="colorful-lines">
+      <div class="colorful-lines item">Hello!</div>
+      <!-- <div class="colorful-lines item">Hello World! 2</div> -->
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      pariatur laudantium quasi sun!
+    </p>
+
+    <h3>Shopping List TEST</h3>
+    <h3 class="list-header">Shopping List:</h3>
+    <ul class="shopping-list">
+      <li>Bread</li>
+      <li id="favourite-food">Eggs</li>
+      <li>Ham</li>
+      <li>Fruits</li>
+    </ul>
+
+    <h3>Clock</h3>
+    <div id="timer">0</div>
+
+    <script>
+      // Favourite Food Demo
+      const favFood = document.getElementById("favourite-food");
+      //   console.log(favFood.textContent);
+      favFood.style.background = "#ea960a";
+
+      setTimeout(() => {
+        favFood.textContent = "French Fries";
+      }, 3000);
+
+      // Timer Demo
+      const timerEl = document.getElementById("timer");
+
+      let counter = 0;
+      setInterval(() => {
+        counter++;
+        timerEl.textContent = counter;
+      }, 1000);
+
+      // Tag Targeting Demo
+      const liElements = document.getElementsByTagName("li");
+      //   console.log(liElements);
+
+      // By Class
+      const listHeader = document.getElementsByClassName("list-header");
+      //   console.log(listHeader);
+
+      // With Query Selector
+      const listheaderEl = document.querySelector("h3.list-header");
+      //   console.log(listHeader);
+
+      const shoppingListItems = document.querySelectorAll(".shopping-list li");
+      //   console.log(shoppingListItems);
+
+      // Iterate over HTMLElements
+      for (const li of liElements) {
+        // console.log(li);
+      }
+
+      // Access element HTMLElements and NodeList
+      //   console.log(shoppingListItems[2]);
+
+      // Convert to an array
+      const liElArray = Array.from(shoppingListItems);
+      console.log(listHeader);
+      console.log(shoppingListItems);
+      console.log(liElArray);
+    </script>
+  </body>
+</html>

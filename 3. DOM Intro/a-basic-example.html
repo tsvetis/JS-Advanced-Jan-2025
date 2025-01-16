@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First DOM</title>
+  </head>
+  <body>
+    <h1>DOM</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur,
+      sunt possimus corporis provident officiis saepe ullam, veniam dolores !
+    </p>
+
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ul>
+
+    <button onclick="console.log('Something has happend!')">Submit</button>
+
+    <form method="post">
+      <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+    </form>
+
+    <script>
+      let name = "Tsveti";
+
+      console.log("Page has Loaded! for " + name);
+
+      console.log(location.pathname);
+    </script>
+  </body>
+</html>
