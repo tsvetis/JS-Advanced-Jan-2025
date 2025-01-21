@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propagation</title>
+    <style>
+      .orange {
+        background-color: orange;
+        width: 70vw;
+        height: 70vh;
+      }
+
+      .green {
+        background-color: green;
+        width: 40vw;
+        height: 40vh;
+      }
+
+      .yellow {
+        background-color: yellow;
+        width: 10vw;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Propagation</h1>
+
+    <div class="orange">
+      <div class="green">
+        <div class="yellow">Hello, Softuni!</div>
+      </div>
+    </div>
+
+    <a href="" id="link">Link</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

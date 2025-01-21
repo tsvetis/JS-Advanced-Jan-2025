@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+
+    <style>
+      .clickable:hover {
+        background-color: rgb(61, 61, 61);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Handling</h1>
+    <p id="lorem">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo illum nobis
+      modi deserunt nesciunt, tempore, praesentium, id corrupti cupiditate
+      numquam possimus veniam a natus quae sunt. Sint quisquam similique cumque?
+      <span id="show-less" class="clickable" onclick="showLessHandler(event)"
+        >Show less</span
+      >
+    </p>
+
+    <hr />
+
+    <h3>Movies:</h3>
+    <ul id="movie-list"></ul>
+
+    <input type="text" id="new-movie" />
+    <button id="add-movie">Add</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
