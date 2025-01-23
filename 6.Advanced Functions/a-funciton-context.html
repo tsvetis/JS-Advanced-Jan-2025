@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Context</title>
+  </head>
+  <body>
+    <input type="button" value="Click me" name="submit-button" />
+
+    <script>
+      function sayHi(event) {
+        console.log(`Hello my name is ${this.name}`);
+      }
+
+      const btn = document.querySelector("input");
+
+      btn.addEventListener("click", sayHi);
+    </script>
+  </body>
+</html>
