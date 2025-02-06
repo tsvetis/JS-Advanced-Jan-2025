@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <title>Autumn Adventures</title>
+  </head>
+
+  <body>
+    <h1>Autumn Adventures</h1>
+    <div id="wrapper">
+      <div class="content-first">
+        <div id="form">
+          <p>Add Autumn Event</p>
+          <form>
+            <div>
+              <label for="time">When:</label>
+              <input id="time" type="time" />
+              <input id="date" type="date" />
+            </div>
+            <div>
+              <label for="place">Place:</label>
+              <input id="place" type="text" placeholder="Place" />
+            </div>
+            <div>
+              <label for="event-name">Event:</label>
+              <input id="event-name" type="text" placeholder="Event Name" />
+            </div>
+            <div>
+              <label for="email">Contacts:</label>
+              <input id="email" type="email" placeholder="Email" />
+            </div>
+
+            <input id="add-btn" type="button" value="Add Event" />
+          </form>
+        </div>
+        <div id="first-field">
+          <p>Upcoming</p>
+          <ul id="upcoming-list"></ul>
+        </div>
+      </div>
+      <div class="content-second">
+        <div id="second-field">
+          <p>Last Check</p>
+          <ul id="check-list"></ul>
+        </div>
+        <div id="third-field">
+          <p>Finished</p>
+          <ul id="finished-list"></ul>
+          <button id="clear">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
