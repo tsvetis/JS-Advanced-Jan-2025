@@ -37,7 +37,8 @@ body {
 }
 
 .game-over {
-  background-color: pink;
+  background-color: rgb(216, 12, 46);
+  color: #fff;
 }
 
 .hidden {
